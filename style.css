@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@500&display=swap');
+
+* {
+    font-family: 'Farro', sans-serif;
+    font-size: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    text-align: center;
+    height: 65vh;
+    width: 22vw;
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: grey;
+}
+
+button {
+    background-color: orange;
+    margin: 5px;
+    padding: 5px;
+    height: 70px;
+    width: 70px;
+}
+
+#screen {
+    text-align: right;
+    border-radius: 10px;
+    background-color: silver;
+    height: 50px;
+    width: 300px;
+}
