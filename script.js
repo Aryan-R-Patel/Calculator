@@ -1,20 +1,24 @@
+// Declaring Variables
 let screen = document.getElementById('screen');
-buttons = document.querySelectorAll('button');
+let buttons = document.querySelectorAll('button');
 let screenValue = '';
 
+// Main Logic
 for (item of buttons) {
-    item.addEventListener("click", (e) => {
+    item.addEventListener('click', (e) => {
         buttonText = e.target.innerText;
-
+        // Multiplication
         if (buttonText == 'X') {
             buttonText = '*';
             screenValue += buttonText;
             screen.value = screenValue;
         }
+        // Clear
         else if (buttonText == 'C') {
-            screenValue = '';
+            screenValue = "";
             screen.value = screenValue;
         }
+        // Equal 
         else if (buttonText == '=') {
             screen.value = eval(screenValue);
         }
@@ -22,5 +26,6 @@ for (item of buttons) {
             screenValue += buttonText;
             screen.value = screenValue;
         }
+
     })
 }
