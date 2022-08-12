@@ -1,3 +1,5 @@
+alert("Sorry! This calculator is under maintenance");
+
 // Declaring Variables
 let screen = document.getElementById('screen');
 let buttons = document.querySelectorAll('button');
