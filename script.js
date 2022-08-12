@@ -1,5 +1,3 @@
-alert("Sorry! This calculator is under maintenance");
-
 // Declaring Variables
 let screen = document.getElementById('screen');
 let buttons = document.querySelectorAll('button');
@@ -10,7 +8,7 @@ for (item of buttons) {
     item.addEventListener('click', (e) => {
         buttonText = e.target.innerText;
         // Multiplication
-        if (buttonText == 'X') {
+        if (buttonText == 'x') {
             buttonText = '*';
             screenValue += buttonText;
             screen.value = screenValue;
